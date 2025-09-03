@@ -26,13 +26,15 @@ function ProductPage() {
     setSearchTerm(e.target.value);
   };
 
-  const filteredProducts = products.filter((product) =>
-    product.pro_name.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredProducts = products.filter(
+    (product) =>
+      product.pro_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      product.pro_des.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <>
-      <div className="flex items-center gap-2 mb-4">
+      <div className="flex items-center gap-2 mb-4 mt-20">
         <input
           type="text"
           placeholder="Search products..."
@@ -40,9 +42,6 @@ function ProductPage() {
           onChange={handleSearch}
           className="w-full p-2 border rounded bg-white"
         />
-        <button className="bg-blue-400 text-white p-2 rounded flex items-center">
-          <FaMagnifyingGlass className="mr-2" /> Search
-        </button>
       </div>
 
       {filteredProducts.length > 0 ? (
