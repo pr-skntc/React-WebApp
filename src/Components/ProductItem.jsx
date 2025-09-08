@@ -46,12 +46,12 @@ const ProductItem = ({ product, id, updateProduct, deleteProduct }) => {
   return (
     <>
       <tr className="bg-white ">
-        <td className="px-4 py-2">{id + 1}</td>
-        <td className="px-4 py-2">{product.pro_name}</td>
-        <td className="px-4 py-2">{product.pro_des}</td>
-        <td className="px-4 py-2">{product.pro_price}</td>
-        <td className="px-4 py-2">{product.pro_qty}</td>
-        <td className="px-4 py-2">
+        <td className="px-4 py-2 text-center">{id + 1}</td>
+        <td className="px-4 py-2 text-center">{product.pro_name}</td>
+        <td className="px-4 py-2 text-center">{product.pro_des}</td>
+        <td className="px-4 py-2 text-center">{product.pro_price}</td>
+        <td className="px-4 py-2 text-center">{product.pro_qty}</td>
+        <td className="px-4 py-2 text-center">
           <button onClick={openModal} className="text-teal-500">
             <FaPen />
           </button>

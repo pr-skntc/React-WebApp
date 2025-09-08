@@ -96,13 +96,13 @@ function ProductPage() {
       {filteredProducts.length > 0 ? (
         <table className="min-w-full mt-1 border-collapse">
           <thead className="bg-gray-300">
-            <tr className="bg-gray-200">
-              <th className="px-4 py-2">#</th>
-              <th className="px-4 py-2">Name</th>
-              <th className="px-4 py-2">Description</th>
-              <th className="px-4 py-2">Price</th>
-              <th className="px-4 py-2">Quantity</th>
-              <th className="px-4 py-2">Action</th>
+            <tr className="bg-gray-200 justify-center-safe">
+              <th className="px-4 py-2 text-center">#</th>
+              <th className="px-4 py-2 text-center">Name</th>
+              <th className="px-4 py-2 text-center">Description</th>
+              <th className="px-4 py-2 text-center">Price</th>
+              <th className="px-4 py-2 text-center">Quantity</th>
+              <th className="px-4 py-2 text-center">Action</th>
             </tr>
           </thead>
           <tbody>
